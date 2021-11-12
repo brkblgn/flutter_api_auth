@@ -28,7 +28,7 @@ class AuthenticationRepository {
       }),
     );
 
-    print(response.body);
+    return response.body;
   }
 
   Future<dynamic> login(
@@ -42,6 +42,6 @@ class AuthenticationRepository {
       body: jsonEncode({"email": email, "password": password}),
     );
 
-    print(response.body);
+    return response.body;
   }
 }
